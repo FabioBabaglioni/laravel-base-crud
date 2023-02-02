@@ -7,11 +7,14 @@
 
     <div class="d-flex flex-wrap justify-content-between">
         @foreach ($Saints as $Saint)
+
         <div class="ms_card mb-3">
-
-            <h4> Saint {{$Saint -> name}} {{$Saint -> surname}} </h4>
-
+            <a href="/saint/ {{$Saint -> id}}">
+                <h4> Saint {{$Saint -> name}} {{$Saint -> surname}} </h4>
+            </a>
         </div>
+
+
         @endforeach
     </div>
 
