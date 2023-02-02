@@ -20,7 +20,7 @@ class SaintFactory extends Factory
             'name' => fake() -> firstName(),
             'surname' => fake() -> lastName(),
             'canonization' => fake() -> date(),
-            'numberOfMiracle' => fake() ->numberBetween(2, 1000),
+            'numberOfMiracle' => fake() ->numberBetween(2, 100),
         ];
     }
 }
