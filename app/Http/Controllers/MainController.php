@@ -10,12 +10,23 @@ class MainController extends Controller
 {
     public function home(){
 
-        $saints = Saint::all();
+        $Saints = Saint::all();
 
         $data = [
-            'Saints' => $saints
+            'Saints' => $Saints
         ];
 
         return view('pages.home', $data);
+    }
+
+    public function show($id) {
+        
+        $saint = Saint::find($id);
+
+        $data = [
+            'saint' => $saint
+        ];
+
+        return view('pages.saint', $data);
     }
 }
