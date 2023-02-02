@@ -14,8 +14,14 @@ return new class extends Migration
     public function up()
     {
         Schema::create('saints', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table -> id();
+
+            $table -> string('name', 32);
+            $table -> string('surname', 32);
+            $table -> date('canonization');
+            $table -> smallInteger('numberOfMiracle') -> ;
+
+            $table -> timestamps();
         });
     }
 
