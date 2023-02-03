@@ -14,7 +14,7 @@
         @foreach ($Saints as $Saint)
 
         <div class="ms_card mb-3">
-            <a href="/saint/ {{$Saint -> id}}">
+            <a href="{{route('saint.show', ['id' => $Saint -> id])}}">
                 <h4> Saint {{$Saint -> name}} {{$Saint -> surname}} </h4>
             </a>
 
