@@ -16,8 +16,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [MainController::class, 'home']) -> name ('home');
 
-Route::get('/saint/{id}', [MainController::class, 'show']) -> name ('saint.show');
+Route::get('/saint/show/{id}', [MainController::class, 'show']) -> name ('saint.show');
 
-Route::get('/saint/{id}/destroy', [MainController::class, 'saintDestroy']) 
+Route::get('/saint/destry/{id}/destroy', [MainController::class, 'saintDestroy']) 
     -> name ('saint.destroy');
+
+Route::get('/saint/create', [MainController::class, 'saintCreate'])->name('saint.create');
 

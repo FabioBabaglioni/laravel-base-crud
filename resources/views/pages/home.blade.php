@@ -5,8 +5,8 @@
 <div class="container text-center">
     <h1 class="text-danger py-4">Lista dei Santi</h1>
 
-    <a href="" class="d-flex justify-content-center">
-        <div class="add mb-5">Inserire nuovo santo</div>
+    <a href="{{route('saint.create')}}" class="d-flex justify-content-center">
+        <div class="add mb-5">Clicca qui per inserire nuovo santo</div>
     </a>
 
 

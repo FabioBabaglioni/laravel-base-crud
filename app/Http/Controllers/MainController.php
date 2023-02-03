@@ -38,4 +38,8 @@ class MainController extends Controller
 
         return redirect()->route('home');
     }
+
+    Public function saintCreate(){
+        return view('pages.saintCreate');
+    }
 }
