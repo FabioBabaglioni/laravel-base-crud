@@ -5,22 +5,23 @@
 <div class="container">
     <h2 class="text-center py-3">Compila il form per creare un nuovo santo da inserire nel database</h2>
 
-    <form class="row g-3">
+    <form class="row g-3" method="post" action="{{route('saint.store')}}">
+        @csrf
         <div class="col-md-6">
-            <label for="inputEmail4" class="form-label">Nome</label>
-            <input type="email" class="form-control" id="inputEmail4">
+            <label for="name" class="form-label">Nome</label>
+            <input type="text" class="form-control" name="name">
         </div>
         <div class="col-md-6">
-            <label for="inputPassword4" class="form-label">Cognome</label>
-            <input type="password" class="form-control" id="inputPassword4">
+            <label for="surname" class="form-label">Cognome</label>
+            <input type="text" class="form-control" name="surname">
         </div>
         <div class="col-12">
-            <label for="inputAddress" class="form-label">Data di cannonizzazione</label>
-            <input type="date" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            <label for="canonization" class="form-label">Data di cannonizzazione</label>
+            <input type="date" class="form-control" name="canonization">
         </div>
         <div class="col-12">
-            <label for="inputAddress2" class="form-label">Numero di miracoli</label>
-            <input type="number" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            <label for="numberOfMiracle" class="form-label">Numero di miracoli</label>
+            <input type="number" class="form-control" name="numberOfMiracle">
         </div>
 
         <div class="col-12">

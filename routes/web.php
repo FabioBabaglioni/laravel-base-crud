@@ -23,3 +23,6 @@ Route::get('/saint/destry/{id}/destroy', [MainController::class, 'saintDestroy']
 
 Route::get('/saint/create', [MainController::class, 'saintCreate'])->name('saint.create');
 
+Route::post('/saint/store', [MainController::class, 'saintStore'])
+    ->name('saint.store');
+

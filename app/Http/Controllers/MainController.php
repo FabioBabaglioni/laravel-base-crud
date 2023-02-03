@@ -44,10 +44,10 @@ class MainController extends Controller
         return view('pages.saintCreate');
     }
 
-    public function saintStore(){
+    public function saintStore(Request $request){
 
-        
+        $data = $request->all();
 
-        var_dump(true); die();
+        var_dump($data); die();
     }
 }
