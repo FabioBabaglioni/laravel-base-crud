@@ -48,6 +48,14 @@ class MainController extends Controller
 
         $data = $request->all();
 
-        var_dump($data); die();
+        $Saint = new Saint();
+        $Saint->name = $data['name'];
+        $Saint->surname = $data['surname'];
+        $Saint->canonization = $data['canonization'];
+        $Saint->numberOfMiracle = $data['numberOfMiracle'];
+
+        $Saint->save();
+
+        return redirect()->route('home');
     }
 }
