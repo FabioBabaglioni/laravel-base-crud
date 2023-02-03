@@ -32,6 +32,10 @@ class MainController extends Controller
     }
 
     public function saintDestroy($id){
-        var_dump($id);
+
+        $Saint = Saint::find($id);
+        $Saint->delete();
+
+        return redirect()->route('home');
     }
 }
