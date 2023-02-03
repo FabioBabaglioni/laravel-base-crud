@@ -9,7 +9,6 @@
         <div>Canonizzato il {{$saint -> canonization}}</div>
         <div>Numero di Miracoli: {{$saint -> numberOfMiracle}}</div>
 
-
     </div>
 
 </div>
