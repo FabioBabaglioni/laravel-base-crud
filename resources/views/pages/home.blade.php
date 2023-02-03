@@ -18,7 +18,7 @@
                 <h4> Saint {{$Saint -> name}} {{$Saint -> surname}} </h4>
             </a>
 
-            <a href="#">
+            <a href="{{ route('saint.destroy', ['id' => $Saint -> id])}}">
                 <div><i class="fa-solid fa-trash"></i></div>
             </a>
 
