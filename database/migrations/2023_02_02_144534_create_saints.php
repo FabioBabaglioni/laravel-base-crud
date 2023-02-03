@@ -19,7 +19,7 @@ return new class extends Migration
             $table -> string('name', 32);
             $table -> string('surname', 32);
             $table -> date('canonization');
-            $table -> smallInteger('numberOfMiracle');
+            $table -> Integer('numberOfMiracle') -> unsigned();
 
             $table -> timestamps();
         });

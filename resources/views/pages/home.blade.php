@@ -5,6 +5,11 @@
 <div class="container text-center">
     <h1 class="text-danger py-4">Lista dei Santi</h1>
 
+    <a href="" class="d-flex justify-content-center">
+        <div class="add mb-5">Inserire nuovo santo</div>
+    </a>
+
+
     <div class="d-flex flex-wrap justify-content-between">
         @foreach ($Saints as $Saint)
 
@@ -12,6 +17,11 @@
             <a href="/saint/ {{$Saint -> id}}">
                 <h4> Saint {{$Saint -> name}} {{$Saint -> surname}} </h4>
             </a>
+
+            <a href="#">
+                <div><i class="fa-solid fa-trash"></i></div>
+            </a>
+
         </div>
 
 

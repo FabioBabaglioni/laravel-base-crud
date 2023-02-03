@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Bus\PrunableBatchRepository;
 use Illuminate\Http\Request;
 
 use App\Models\Saint;
@@ -28,5 +29,9 @@ class MainController extends Controller
         ];
 
         return view('pages.saint', $data);
+    }
+
+    public function saintDestroy($id){
+        var_dump($id);
     }
 }

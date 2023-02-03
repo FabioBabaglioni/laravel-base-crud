@@ -20,3 +20,4 @@ class SaintSeeder extends Seeder
         Saint::factory() -> count (100) -> create();
     }
 }
+ 
