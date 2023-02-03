@@ -8,24 +8,24 @@
     <form class="row g-3" method="post" action="{{route('saint.store')}}">
         @csrf
         <div class="col-md-6">
-            <label for="name" class="form-label">Nome</label>
+            <label for="name" class="form-label fs-5">Nome</label>
             <input type="text" class="form-control" name="name">
         </div>
         <div class="col-md-6">
-            <label for="surname" class="form-label">Cognome</label>
+            <label for="surname" class="form-label fs-5">Cognome</label>
             <input type="text" class="form-control" name="surname">
         </div>
         <div class="col-12">
-            <label for="canonization" class="form-label">Data di cannonizzazione</label>
+            <label for="canonization" class="form-label fs-5">Data di cannonizzazione</label>
             <input type="date" class="form-control" name="canonization">
         </div>
         <div class="col-12">
-            <label for="numberOfMiracle" class="form-label">Numero di miracoli</label>
+            <label for="numberOfMiracle" class="form-label fs-5">Numero di miracoli</label>
             <input type="number" class="form-control" name="numberOfMiracle">
         </div>
 
         <div class="col-12">
-            <button type="submit" class="btn btn-primary">Aggiungi al Database</button>
+            <button type="submit" class="btn btn-success fs-5">Aggiungi al Database</button>
         </div>
     </form>
 </div>

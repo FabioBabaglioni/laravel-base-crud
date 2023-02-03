@@ -11,7 +11,7 @@ class MainController extends Controller
 {
     public function home(){
 
-        $Saints = Saint::all();
+        $Saints = Saint::orderBy('created_at', 'DESC') -> get();
 
         $data = [
             'Saints' => $Saints
