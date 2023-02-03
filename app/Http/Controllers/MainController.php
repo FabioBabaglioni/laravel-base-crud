@@ -40,6 +40,14 @@ class MainController extends Controller
     }
 
     Public function saintCreate(){
+
         return view('pages.saintCreate');
+    }
+
+    public function saintStore(){
+
+        
+
+        var_dump(true); die();
     }
 }
